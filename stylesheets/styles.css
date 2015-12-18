@@ -702,7 +702,7 @@ dt {
   left: 0;
   /*noinspection CssRedundantUnit*/
   top: 0px;
-  height: 87px;
+  height: 85px;
   width: 100%;
   position: fixed;
   background: url(../images/nav-bg.gif) #353535;
@@ -788,11 +788,14 @@ dt {
   margin-left: 6px;
 }
 
-/*noinspection CssUnusedSymbol*/
 #header nav li.title {
   float: right;
-  margin-right: 10px;
-  font-size: 11px;
+  margin-right: 0px;
+  font-size: 18px;
+  line-height: 115px;
+  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: normal;
+  color: #b6b6b6;
 }
 
 /*noinspection CssRedundantUnit,CssRedundantUnit*/
