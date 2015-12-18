@@ -15,33 +15,40 @@
 
 */
 
+/*noinspection CssUnusedSymbol*/
 .pl-c /* comment */ {
   color: #969896;
 }
 
+/*noinspection CssUnusedSymbol*/
 .pl-c1      /* constant, markup.raw, meta.diff.header, meta.module-reference, meta.property-name, support, support.constant, support.variable, variable.other.constant */,
 .pl-s .pl-v /* string variable */ {
   color: #0099cd;
 }
 
+/*noinspection ALL*/
 .pl-e  /* entity */,
 .pl-en /* entity.name */ {
   color: #9774cb;
 }
 
+/*noinspection CssUnusedSymbol,CssUnusedSymbol*/
 .pl-s .pl-s1 /* string source */,
 .pl-smi      /* storage.modifier.import, storage.modifier.package, storage.type.java, variable.other, variable.parameter.function */ {
   color: #ddd;
 }
 
+/*noinspection CssUnusedSymbol*/
 .pl-ent /* entity.name.tag */ {
   color: #7bcc72;
 }
 
+/*noinspection CssUnusedSymbol*/
 .pl-k /* keyword, storage, storage.type */ {
   color: #cc2372;
 }
 
+/*noinspection CssUnusedSymbol,CssUnusedSymbol,CssUnusedSymbol,CssUnusedSymbol,CssUnusedSymbol,CssUnusedSymbol,CssUnusedSymbol*/
 .pl-pds              /* punctuation.definition.string, string.regexp.character-class */,
 .pl-s                /* string */,
 .pl-s .pl-pse .pl-s1 /* string punctuation.section.embedded source */,
@@ -52,28 +59,34 @@
   color: #3c66e2;
 }
 
+/*noinspection CssUnusedSymbol*/
 .pl-v /* variable */ {
   color: #fb8764;
 }
 
+/*noinspection CssUnusedSymbol*/
 .pl-id /* invalid.deprecated */ {
   color: #e63525;
 }
 
+/*noinspection CssUnusedSymbol*/
 .pl-ii /* invalid.illegal */ {
   background-color: #e63525;
   color: #f8f8f8;
 }
 
+/*noinspection CssUnusedSymbol*/
 .pl-sr .pl-cce /* string.regexp constant.character.escape */ {
   color: #7bcc72;
   font-weight: bold;
 }
 
+/*noinspection CssUnusedSymbol*/
 .pl-ml /* markup.list */ {
   color: #c26b2b;
 }
 
+/*noinspection CssUnusedSymbol,CssUnusedSymbol,CssUnusedSymbol*/
 .pl-mh        /* markup.heading */,
 .pl-mh .pl-en /* markup.heading entity.name */,
 .pl-ms        /* meta.separator */ {
@@ -81,35 +94,42 @@
   font-weight: bold;
 }
 
+/*noinspection CssUnusedSymbol*/
 .pl-mq /* markup.quote */ {
   color: #00acac;
 }
 
+/*noinspection CssUnusedSymbol*/
 .pl-mi /* markup.italic */ {
   color: #ddd;
   font-style: italic;
 }
 
+/*noinspection CssUnusedSymbol*/
 .pl-mb /* markup.bold */ {
   color: #ddd;
   font-weight: bold;
 }
 
+/*noinspection CssUnusedSymbol*/
 .pl-md /* markup.deleted, meta.diff.header.from-file */ {
   background-color: #ffecec;
   color: #bd2c00;
 }
 
+/*noinspection CssUnusedSymbol*/
 .pl-mi1 /* markup.inserted, meta.diff.header.to-file */ {
   background-color: #eaffea;
   color: #55a532;
 }
 
+/*noinspection CssUnusedSymbol*/
 .pl-mdr /* meta.diff.range */ {
   color: #9774cb;
   font-weight: bold;
 }
 
+/*noinspection CssUnusedSymbol*/
 .pl-mo /* meta.output */ {
   color: #264ec5;
 }

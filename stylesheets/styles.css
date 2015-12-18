@@ -1,3 +1,8 @@
+/*Move -webkit-font-smoothing property to html and out of @font-face*/
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 @font-face {
   font-family: 'OpenSansLight';
   src: url("../fonts/OpenSans-Light-webfont.eot");
@@ -20,7 +25,6 @@
   src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular") format("svg");
   font-weight: normal;
   font-style: normal;
-  -webkit-font-smoothing: antialiased;
 }
 
 @font-face {
@@ -29,7 +33,6 @@
   src: url("../fonts/OpenSans-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Italic-webfont.woff") format("woff"), url("../fonts/OpenSans-Italic-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Italic-webfont.svg#OpenSansItalic") format("svg");
   font-weight: normal;
   font-style: normal;
-  -webkit-font-smoothing: antialiased;
 }
 
 @font-face {
@@ -38,7 +41,6 @@
   src: url("../fonts/OpenSans-Semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Semibold-webfont.woff") format("woff"), url("../fonts/OpenSans-Semibold-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold") format("svg");
   font-weight: normal;
   font-style: normal;
-  -webkit-font-smoothing: antialiased;
 }
 
 @font-face {
@@ -47,7 +49,6 @@
   src: url("../fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-SemiboldItalic-webfont.woff") format("woff"), url("../fonts/OpenSans-SemiboldItalic-webfont.ttf") format("truetype"), url("../fonts/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic") format("svg");
   font-weight: normal;
   font-style: normal;
-  -webkit-font-smoothing: antialiased;
 }
 
 @font-face {
@@ -56,7 +57,6 @@
   src: url("../fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold-webfont.woff") format("woff"), url("../fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Bold-webfont.svg#OpenSansBold") format("svg");
   font-weight: normal;
   font-style: normal;
-  -webkit-font-smoothing: antialiased;
 }
 
 @font-face {
@@ -65,7 +65,6 @@
   src: url("../fonts/OpenSans-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-BoldItalic-webfont.woff") format("woff"), url("../fonts/OpenSans-BoldItalic-webfont.ttf") format("truetype"), url("../fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic") format("svg");
   font-weight: normal;
   font-style: normal;
-  -webkit-font-smoothing: antialiased;
 }
 
 /* normalize.css 2012-02-07T12:37 UTC - https://github.com/necolas/normalize.css */
@@ -82,7 +81,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 nav,
 section,
 summary {
@@ -274,7 +272,9 @@ q {
 /* 2 */
 q:before,
 q:after {
+  /*noinspection CssOverwrittenProperties*/
   content: '';
+  /*noinspection CssOverwrittenProperties*/
   content: none;
 }
 
@@ -333,8 +333,7 @@ ul {
  */
 nav ul,
 nav ol {
-  list-style: none;
-  list-style-image: none;
+  list-style: none none;
 }
 
 /* =============================================================================
@@ -528,6 +527,7 @@ table {
   border-spacing: 0;
 }
 
+/*noinspection ALL*/
 body {
   padding: 0px 0 20px 0px;
   margin: 0px;
@@ -623,7 +623,7 @@ blockquote {
 }
 
 code {
-  font-family: "Lucida Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  font-family: "Lucida Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
   color: #efefef;
   font-size: 13px;
   margin: 0 4px;
@@ -653,6 +653,8 @@ pre {
   overflow: auto;
   overflow-y: hidden;
 }
+
+/*noinspection CssRedundantUnit,CssRedundantUnit*/
 pre code {
   color: #efefef;
   text-shadow: 0px 1px 0px #000;
@@ -694,11 +696,13 @@ dt {
   font-weight: normal;
 }
 
+/*noinspection CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit*/
 #header {
   z-index: 100;
   left: 0;
+  /*noinspection CssRedundantUnit*/
   top: 0px;
-  height: 60px;
+  height: 87px;
   width: 100%;
   position: fixed;
   background: url(../images/nav-bg.gif) #353535;
@@ -710,11 +714,12 @@ dt {
 }
 #header nav {
   max-width: 650px;
-  margin: 0 auto;
   padding: 0 10px;
   background: blue;
   margin: 6px auto;
 }
+
+/*noinspection CssRedundantUnit,CssRedundantUnit*/
 #header nav li {
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -725,6 +730,8 @@ dt {
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
+
+/*noinspection CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit*/
 #header nav li a {
   color: white;
   border: 1px solid #5d910b;
@@ -745,13 +752,15 @@ dt {
   -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.7);
   background-color: #93bd20;
-  padding: 10px 12px;
+  padding: 2px 2px 0px 2px;
   margin-top: 6px;
   line-height: 14px;
   font-size: 14px;
   display: inline-block;
   text-align: center;
 }
+
+/*noinspection CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit,CssRedundantUnit*/
 #header nav li a:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e));
   background: -webkit-linear-gradient(#749619, #527f0e);
@@ -766,25 +775,31 @@ dt {
   -o-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 0px rgba(0, 0, 0, 0);
 }
+
+/*noinspection CssRedundantUnit*/
 #header nav li.fork {
   float: left;
   margin-left: 0px;
 }
+
+/*noinspection CssUnusedSymbol*/
 #header nav li.downloads {
   float: right;
   margin-left: 6px;
 }
+
+/*noinspection CssUnusedSymbol*/
 #header nav li.title {
   float: right;
   margin-right: 10px;
   font-size: 11px;
 }
 
+/*noinspection CssRedundantUnit,CssRedundantUnit*/
 section {
   max-width: 650px;
   padding: 30px 0px 50px 0px;
-  margin: 20px 0;
-  margin-top: 70px;
+  margin: 70px 0 20px;
 }
 section #title {
   border: 0;
@@ -798,6 +813,7 @@ section #title h1 {
   font-size: 40px;
   text-align: center;
   line-height: 36px;
+  margin: 0 0 0 0;
 }
 section #title p {
   color: #d7cfbe;
